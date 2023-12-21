@@ -5,8 +5,8 @@ const deliveryClient = KontentDelivery.createDeliveryClient({
   secureApiKey: process.env.KONTENT_DELIVERY_KEY,
   previewApiKey: process.env.KONTENT_DELIVERY_KEY,
   defaultQueryConfig: {
-    // Enabled secure access for all queries
-    useSecuredMode: true,
+    useSecuredMode: true, // Enabled secure access for all queries
+    usePreviewMode: true, // Queries the Delivery Preview API.
   },
 });
 
