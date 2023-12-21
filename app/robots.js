@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://innovatice.tech/sitemap.xml",
+    sitemap: "https://recipes-yall.vercel.app/sitemap.xml",
   };
 }

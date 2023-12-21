@@ -1,8 +1,0 @@
-ErrorDocument 400 https://innovatice.tech/
-ErrorDocument 403 https://innovatice.tech/
-ErrorDocument 404 https://innovatice.tech/
-ErrorDocument 500 https://innovatice.tech/
-
-RewriteEngine On 
-RewriteCond %{HTTPS} off 
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

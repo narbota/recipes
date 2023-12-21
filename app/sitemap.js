@@ -9,7 +9,7 @@ export default function sitemap() {
 
   return pages.map((page) => {
     return {
-      url: `https://innovatice.tech/${page}`,
+      url: `https://recipes-yall.vercel.app/${page}`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1,
