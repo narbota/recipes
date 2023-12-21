@@ -5,7 +5,7 @@ export default function RecipeList({ recipeList = [] }) {
   const history = useRouter();
 
   return (
-    <div className="bg-white pt-24 sm:pt-36 border-t border-gray-200">
+    <div className="bg-white py-24 border-t border-gray-200">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-3xl">
