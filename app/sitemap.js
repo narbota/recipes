@@ -11,7 +11,7 @@ export default async function sitemap() {
 
   return pages.map((page) => {
     return {
-      url: `https://recipes-yall.vercel.app/${page}`,
+      url: `https://recipes-yall.netlify.app/${page}`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1,
