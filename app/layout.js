@@ -4,26 +4,26 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  metadataBase: new URL("https://innovatice.tech"),
-  title: "Innovatice - Ignite Innovation",
+  metadataBase: new URL("localhost:3000"),
+  title: "Recipes, Yall!",
   description:
-    "At Innovatice, we empower companies to modernize their technology, reimagine processes, and transform experiences. Stay ahead in a fast-changing world with our innovative solutions.",
+    "I create recipes for your eating pleasure. I also create recipes for your cooking pleasure.",
   keywords: [
-    "Software Development",
-    "Technology Consulting",
-    "Custom Solutions",
-    "Product Development",
-    "Web Development",
-    "Mobile Development",
-    "Cloud Development",
-    "DevOps",
-    "UI/UX Design",
-    "Digital Transformation",
-    "Innovatice",
+    "recipes",
+    "eating",
+    "healthy",
+    "diet",
+    "food",
+    "weight loss",
+    "cooking",
+    "foodie",
+    "foodporn",
+    "foodgasm",
+    "foodstagram",
   ],
-  authors: [{ name: "Innovatice, LLC" }],
-  creator: "Innovatice, LLC",
-  publisher: "Innovatice, LLC",
+  authors: [{ name: "Recipes, Yall!" }],
+  creator: "Recipes, Yall!",
+  publisher: "Recipes, Yall!",
 };
 
 export default function RootLayout({ children }) {
@@ -56,12 +56,12 @@ export default function RootLayout({ children }) {
         <header className={`${header.background} border-b border-white/10`}>
           <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
             <a href="/" className="mx-auto">
-              <span className="sr-only">Innovatice</span>
+              <span className="sr-only">Recipes, Yall </span>
               <img
                 className="h-7 w-auto sm:h-9"
                 src={header.img}
-                alt="Innovatice"
-                title="Innovatice"
+                alt="Recipes, Yall!"
+                title="Recipes, Yall!"
               />
             </a>
           </div>
@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
         {children}
         <footer className={`${footer.background} py-10`}>
           <div className={`text-center ${footer.text}`}>
-            2023 &copy; Innovatice, LLC
+            2023 &copy; Recipes Yall!, LLC
             <br />
           </div>
         </footer>

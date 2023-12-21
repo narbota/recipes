@@ -54,13 +54,13 @@ const sendEmail = async (body, replyTo) => {
   );
 
   const msg = {
-    to: "vincent@innovatice.tech",
+    to: "andrea@narbot.com",
     from: {
-      email: "hello@innovatice.tech",
-      name: "Innovatice",
+      email: "andrea@narbot.com",
+      name: "Recipes",
     },
     replyTo,
-    subject: "[Innovatice Inquiry] Contact",
+    subject: "Cooks Contact",
     text: body,
     html: body,
   };
