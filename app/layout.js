@@ -33,8 +33,7 @@ export default function RootLayout({ children }) {
         <header className={`bg-teal-400 border-b border-white/10`}>
           <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
             <a href="/" className="mx-auto">
-              <span className="sr-only">Recipes, Yall </span>
-              Recipes, Yall!
+              🍲 Recipes, Yall!
             </a>
           </div>
         </header>

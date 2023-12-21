@@ -1,4 +1,3 @@
-import { LinkIcon } from "@heroicons/react/24/solid";
 import { getRecipeList } from "../../utils/recipes";
 
 const getRecipe = async (slug) => {
@@ -12,11 +11,11 @@ export async function generateMetadata({ params }, parent) {
 
   return {
     title: recipe.title + " | Recipes, Yall!",
-    description: recipe.tagline,
+    description: recipe.title,
     openGraph: {
-      images: [recipe.thumbnail],
+      images: [recipe.image],
     },
-    keywords: [...recipe.technologies, recipe.title],
+    keywords: [recipe.title, "recipes yall"],
   };
 }
 
@@ -39,7 +38,7 @@ export default async function Page({ params }) {
       <div className="px-6 py-6 lg:px-8 mx-auto max-w-7xl bg-white mt-64 border border-gray-200 rounded-lg shadow-lg">
         <div className="">
           <img
-            src={recipe.thumbnail}
+            src={recipe.image}
             alt={recipe.title}
             title={recipe.title}
             className="h-96 w-96 object-cover rounded-lg shadow-lg mx-auto -mt-56"
@@ -53,49 +52,14 @@ export default async function Page({ params }) {
                   {recipe.title}
                 </span>
               </h1>
-              <div className="mt-2 max-w-3xl text-xl text-neutral-600 mx-auto">
-                <p>{recipe.tagline}</p>
-              </div>
 
               <div className="mt-10 prose prose-neutral prose-lg text-neutral-600 text-left">
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: recipe.description.replace(/\n/g, "<br />"),
+                    __html: recipe.body.replace(/\n/g, "<br />"),
                   }}
                 />
               </div>
-
-              <div className="mt-10 prose prose-neutral prose-lg text-neutral-600 text-left">
-                <span className="font-semibold">What we used:</span>
-                <div className="gap-x-2 gap-y-2 mt-2 flex flex-wrap">
-                  {recipe.technologies.map((technology) => (
-                    <span
-                      className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-neutral-100 text-neutral-800"
-                      key={technology}
-                    >
-                      {technology}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {recipe.links.length > 0 && (
-                <div className="mt-10 prose prose-neutral prose-lg text-neutral-600 text-left mb-10">
-                  <span className="font-semibold">Links to visit:</span>
-                  <div className="gap-x-10 gap-y-2 mt-2 flex flex-wrap">
-                    {recipe.links.map((link) => (
-                      <a
-                        href={link.url}
-                        target="_blank"
-                        className="text-teal-500 hover:text-teal-500 flex underline decoration-wavy decoration-black/50 underline-offset-4"
-                        key={link.url}
-                      >
-                        {link.label} <LinkIcon className="h-4 w-4 ml-1 mt-1" />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>

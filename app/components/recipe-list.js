@@ -16,7 +16,7 @@ export default function RecipeList({ recipeList = [] }) {
           </p>
         </div>
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-6 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {recipeList.slice(0, 3).map((recipe) => (
+          {recipeList.map((recipe) => (
             <article
               key={recipe.slug}
               className="flex max-w-xl flex-col items-start justify-between"
@@ -26,7 +26,7 @@ export default function RecipeList({ recipeList = [] }) {
             >
               <div className="group relative">
                 <img
-                  src={recipe.img}
+                  src={recipe.image}
                   alt={recipe.title}
                   title={recipe.title}
                   className="aspect-[4/3] w-full rounded-lg object-cover group-hover:opacity-75 group-hover:shadow-lg"
