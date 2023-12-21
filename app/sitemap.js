@@ -1,10 +1,12 @@
-import { projects } from "./utils/projects";
+import { getRecipeList } from "./utils/";
 
-export default function sitemap() {
-  let pages = ["", "contact"];
+export default async function sitemap() {
+  let pages = [""];
 
-  projects.forEach((project) => {
-    pages.push(`case-studies/${project.slug}`);
+  const recipeList = await getRecipeList();
+
+  recipeList.forEach((recipe) => {
+    pages.push(`recipes/${recipe.slug}`);
   });
 
   return pages.map((page) => {

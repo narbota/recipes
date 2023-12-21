@@ -22,7 +22,6 @@ export const getRecipeList = async () => {
     .toPromise();
 
   const recipes = response.data.items.map((item) => {
-    console.log(item.elements.recipe_image.value[0]);
     return {
       title: item.elements.recipe_title.value,
       image: item.elements.recipe_image?.value[0].url,
