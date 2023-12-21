@@ -1,4 +1,4 @@
-import { getRecipeList } from "./utils/";
+import { getRecipeList } from "./utils/recipes";
 
 export default async function sitemap() {
   let pages = [""];
