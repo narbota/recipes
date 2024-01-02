@@ -5,8 +5,8 @@ export default async function Home({}) {
   const recipeList = await getRecipeList();
 
   return (
-    <main className="tracking-normal bg-white">
-      <div className="bg-teal-400 relative">
+    <main className="tracking-normal">
+      <div className="bg-gradient-to-r from-teal-100 to-teal-500 relative">
         <div className="max-w-5xl mx-auto py-12 sm:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden z-10">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-grey-800 sm:text-5xl tracking-wide">

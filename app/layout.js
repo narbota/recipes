@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import Search from "./components/Search";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
             </a>
           </div>
         </header>
+        <Search />
         {children}
         <footer className={`bg-white py-10`}>
           <div className={`text-center text-grey-300`}>

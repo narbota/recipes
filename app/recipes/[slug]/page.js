@@ -52,6 +52,7 @@ export default async function Page({ params }) {
                   {recipe.title}
                 </span>
               </h1>
+              <button className="bg-teal-400">Generate recipe pdf</button>
 
               <div className="mt-10 prose prose-neutral prose-lg text-neutral-600 text-left">
                 <p
