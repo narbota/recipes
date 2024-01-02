@@ -32,12 +32,13 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <header className={`bg-teal-400 border-b border-white/10`}>
           <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
+            <Search />
             <a href="/" className="mx-auto">
               🍲 Recipes, Yall!
             </a>
           </div>
         </header>
-        <Search />
+
         {children}
         <footer className={`bg-white py-10`}>
           <div className={`text-center text-grey-300`}>
