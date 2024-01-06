@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Search from "./components/Search";
+import Excel from "./components/Excel";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <header className={`bg-teal-400 border-b border-white/10`}>
           <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
             <Search />
+            <Excel />
             <a href="/" className="mx-auto">
               🍲 Recipes, Yall!
             </a>
