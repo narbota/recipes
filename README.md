@@ -8,14 +8,22 @@ Recipes, Y'all
 This project is a collection of recipes. It provides a variety of recipes for different types of dishes, including appetizers, main courses, desserts, and more. The goal of this project is to help users discover and try out new recipes, as well as share their own recipes with the community.
 -->
 
+#You will need a Kontent.ai account.
+
+# You will need to install Nextjs 14
+
+# You will need your environment ID from Kontent.ai
+
+# You will need Nodejs as well as an account with Netlify or Vercel
+
+Instructions: Log into your kontent.ai account and go to environment settings
+
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-
-## Installation
 
 ## Installation
 
