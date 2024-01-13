@@ -1,83 +1,12 @@
 # Project Name
 
-Recipes
+Recipes, Y'all
 
 ## Description
 
-    This project is to test out the Nextjs 14 version with Kontent.ai
-
-## Table of Contents
-
-- [Installation](#installation)
-
-## Installation
-
-Follow these instructions to install and set up your project:
-
-1. Step 1
-
-   ```shell
-   $ command 1
-   ```
-
-2. Step 2
-
-   ```shell
-   $ command 2
-   ```
-
-3. Step 3
-   ```shell
-   $ command 3
-   ```
-
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Installation
-
-[]: # (DOCUMENTATION)
-
-## Installation and Setup Instructions
-
-To install and set up the project, follow these steps:
-
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Run the necessary installation commands (e.g., `npm install` or `pip install -r requirements.txt`).
-4. Configure any necessary environment variables.
-5. Start the project by running the appropriate command (e.g., `npm start` or `python app.py`).
-
-Make sure to replace any placeholders or configuration values with the appropriate values for your environment.
-
-For more detailed instructions, please refer to the [README.md](/Users/andrean/Code/recipes/README.md) file.
-[Provide instructions on how to install and set up your project]
-
-## Usage
-
-[]: # (DOCUMENTATION)
-[]: # FILEPATH: /Users/andrean/Code/recipes/README.md
-
-/\*\*
-
-- Provides instructions on how to use your project.
-  \*/
-  [Provide instructions on how to use your project]
-
-## Contributing
-
-[Explain how others can contribute to your project]
-
-## License
-
-[Specify the license under which your project is distributed]
-
-# Project Name
-
-## Description
-
-Provide a brief description of your project here.
+<!--
+This project is a collection of recipes. It provides a variety of recipes for different types of dishes, including appetizers, main courses, desserts, and more. The goal of this project is to help users discover and try out new recipes, as well as share their own recipes with the community.
+-->
 
 ## Table of Contents
 
@@ -88,56 +17,32 @@ Provide a brief description of your project here.
 
 ## Installation
 
-Follow these instructions to install and set up your project:
+## Installation
 
-1. Step 1
+To get started with the project, follow these steps:
 
-   ```shell
-   $ command 1
+1. Clone the repository using the following command:
+
+   ```
+   git clone <repository_url>
    ```
 
-2. Step 2
+2. Install all the project dependencies by running the following command:
 
-   ```shell
-   $ command 2
+   ```
+   npm install
    ```
 
-3. Step 3
-   ```shell
-   $ command 3
-   ```
+3. Sign in to Kontent.ai to get your environment ID and Delivery API Key as
 
 ## Usage
 
-Follow these instructions to use your project:
-
-1. Step 1
-
-   ```shell
-   $ command 1
-   ```
-
-2. Step 2
-
-   ```shell
-   $ command 2
-   ```
-
-3. Step 3
-   ```shell
-   $ command 3
-   ```
+[Provide instructions on how to use the project]
 
 ## Contributing
 
-To contribute to this project, follow these steps:
-
-1. Fork this repository.
-2. Create a new branch: `git checkout -b feature/your-feature`.
-3. Make your changes and commit them: `git commit -m 'Add some feature'`.
-4. Push to the original branch: `git push origin feature/your-feature`.
-5. Create a pull request.
+[Provide guidelines for contributing to the project]
 
 ## License
 
-This project is licensed under the [License Name]. See the [LICENSE](LICENSE) file for details.
+[Specify the project's license]
