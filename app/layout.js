@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Search from "./components/Search";
-import Excel from "./components/Excel";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
