@@ -14,6 +14,10 @@ const ContentTypeCodenames = {
   recipe: "recipe",
 };
 
+/**
+ * Retrieves a list of recipes from the delivery client.
+ * @returns {Promise<Array<Object>>} The list of recipes.
+ */
 export const getRecipeList = async () => {
   const response = await deliveryClient
     .items()

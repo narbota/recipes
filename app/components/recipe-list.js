@@ -1,3 +1,10 @@
+/**
+ * Renders a list of highlighted recipes.
+ *
+ * @component
+ * @param {Object[]} recipeList - The list of recipes to display.
+ * @returns {JSX.Element} The rendered component.
+ */
 "use client";
 import { useRouter } from "next/navigation";
 
