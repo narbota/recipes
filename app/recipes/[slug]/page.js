@@ -1,4 +1,5 @@
 import { getRecipeList } from "../../utils/recipes";
+import PdfGenerator from "../../utils/pdfGenerator";
 
 const getRecipe = async (slug) => {
   const recipeList = await getRecipeList();
@@ -52,7 +53,7 @@ export default async function Page({ params }) {
                   {recipe.title}
                 </span>
               </h1>
-              <button className="bg-teal-400">Generate recipe pdf</button>
+              <PdfGenerator />
 
               <div className="mt-10 prose prose-neutral prose-lg text-neutral-600 text-left">
                 <p
