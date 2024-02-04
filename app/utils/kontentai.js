@@ -18,14 +18,13 @@ const ContentTypeCodenames = {
  * Retrieves a list of recipes from the delivery client.
  * @returns {Promise<Array<Object>>} The list of recipes.
  */
-export const getRecipeList = async () => {
+export const getRecipeListFromKontentAI = async () => {
   const response = await deliveryClient
     .items()
     .type(ContentTypeCodenames.recipe)
     .toPromise();
 
   const recipes = response.data.items.map((item) => {
-    console.log(response.data.items);
     return {
       title: item.elements.recipe_title.value,
       image: item.elements.recipe_image?.value[0].url,

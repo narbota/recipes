@@ -1,8 +1,8 @@
-import { getRecipeList } from "../../utils/recipes";
-import PdfGenerator from "../../utils/pdfGenerator";
+import { getRecipeListFromKontentAI } from "../../utils/kontentai";
+import DownloadPDFButton from "../../components/pdf-generator-button";
 
 const getRecipe = async (slug) => {
-  const recipeList = await getRecipeList();
+  const recipeList = await getRecipeListFromKontentAI();
   return recipeList.find((recipe) => recipe.slug === slug);
 };
 
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }, parent) {
 }
 
 export async function generateStaticParams() {
-  const recipeList = await getRecipeList();
+  const recipeList = await getRecipeListFromKontentAI();
   return recipeList.map((recipe) => ({
     slug: recipe.slug,
   }));
@@ -53,7 +53,7 @@ export default async function Page({ params }) {
                   {recipe.title}
                 </span>
               </h1>
-              <PdfGenerator />
+              <DownloadPDFButton slug={recipe.slug} />
 
               <div className="mt-10 prose prose-neutral prose-lg text-neutral-600 text-left">
                 <p

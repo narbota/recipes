@@ -1,8 +1,8 @@
 import RecipeList from "./components/recipe-list";
-import { getRecipeList } from "./utils/recipes";
+import { getRecipeListFromKontentAI } from "./utils/kontentai";
 
 export default async function Home({}) {
-  const recipeList = await getRecipeList();
+  const recipeList = await getRecipeListFromKontentAI();
 
   return (
     <main className="tracking-normal">

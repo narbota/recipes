@@ -1,9 +1,9 @@
-import { getRecipeList } from "./utils/recipes";
+import { getRecipeListFromKontentAI } from "./utils/kontentai";
 
 export default async function sitemap() {
   let pages = [""];
 
-  const recipeList = await getRecipeList();
+  const recipeList = await getRecipeListFromKontentAI();
 
   recipeList.forEach((recipe) => {
     pages.push(`recipes/${recipe.slug}`);
