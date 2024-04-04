@@ -23,10 +23,12 @@ const generatePDFwithPDFKit = async (req, res) => {
   // Change this to your own content source
   const recipeList = await getRecipeListFromKontentAI();
   const recipe = recipeList.find((recipe) => recipe.slug === slug);
+  console.log(recipe);
 
   // Then generate the PDF with PDFKit
   // Documentation for PDFKit: https://pdfkit.org/docs/getting_started.html
   const PDFDocument = require("pdfkit");
+
   const pdf = new PDFDocument({
     size: "A4",
   });
@@ -35,6 +37,11 @@ const generatePDFwithPDFKit = async (req, res) => {
     x: 15,
     y: 15,
   };
+  //strip html tags from recipe body
+  recipe.body = recipe.body.replace(/<[^>]*>?/gm, "");
+
+  // Add the content to the PDF
+  pdf.text(margin.x, margin.y);
 
   // Adapt it to your own content
   if (recipe.image) {
